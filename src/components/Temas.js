@@ -1,7 +1,8 @@
 import React              from 'react'
+import HookUseState       from './HookUseState'
 import HookUseEffect      from './HookUseEffect/HookUseEffect'
 import UseEffectLimpieza  from './HookUseEffect/UseEffectLimpieza'
-import HookUseState       from './HookUseState'
+import HookUseMemo        from './HookUseMemo'
 
 const Temas = () => {
   
@@ -9,7 +10,8 @@ const Temas = () => {
     <>
       {/* <HookUseState /> */}
       {/* <HookUseEffect /> */}
-      <UseEffectLimpieza />
+      {/* <UseEffectLimpieza /> */}
+      <HookUseMemo />
     </>
   )
 }
