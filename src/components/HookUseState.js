@@ -22,7 +22,7 @@ const HookUseState = () => {
 
         partes
         1.- nombre de la constante
-        2.- función que utilizamos para modificar la variable
+        2.- función que utilizamos para modificar la constante
         3.- valor con el que iniciamos el estado
 
         ¿que es lo que hace?
@@ -34,10 +34,22 @@ const HookUseState = () => {
         por ejemplo: el resultado de una query
     */
 
-    const [nombre, setNombre] = useState('Antonio')
+    const [numero, setnumero] = useState(0)
+
+    const incrementar = () => {
+        setnumero(numero + 1)
+    }
+
+    const decrementar = () => {
+        setnumero(numero - 1)
+    }
   
     return (
-        <h1>{nombre}</h1>
+        <>  
+            <button onClick={incrementar}>Incrementar</button>
+            <button onClick={decrementar}>Decrementar</button>
+            <h1>{numero}</h1>
+        </>
     )
 }
 

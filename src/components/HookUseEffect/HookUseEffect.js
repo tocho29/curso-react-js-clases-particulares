@@ -40,27 +40,27 @@ const HookUseEffect = () => {
 
     const [hola, setHola] = useState(true)
 
-    // useEffect(() => {
-      
-    //   // codigo que quieres que se ejecute
-
-    //   // función de retorno para limpiar la memoria (opcional)
-    //   return () => {}
-    // }, []) // aquí van las dependencias que hacen que se ejecute cuando se actualizan
-
     useEffect(() => {
-      setHola(false)
+      
+      // codigo que quieres que se ejecute
+
+      // función de retorno para limpiar la memoria (opcional)
+      return () => {}
+    }, []) // aquí van las dependencias que hacen que se ejecute cuando se actualizan
+
+    // useEffect(() => {
+    //   setHola(false)
     
-      return () => { }
-    }, [])
+    //   return () => { }
+    // }, [])
     
     return (
       <>
-        {
+        {/* {
           hola === true
           ? <h1>CARGANDO...</h1>
           : <h2>hola mundo</h2>
-        }
+        } */}
       </>
   )
 }
