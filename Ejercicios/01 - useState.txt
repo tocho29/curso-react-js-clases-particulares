@@ -1,6 +1,7 @@
 ejercicio de useState
 ---------------------
 Crea un componente de React que contenga un botón. Cuando hagas click en el botón se lanzará un promp de JavaScript y te pedirá cualquier cosa que tu quieras.
+
 Lo que quiero es que cuando escribas algo y le des a intro o aceptar la aplicación muestre lo que has escrito en alguna etiqueta HTML.
 Además el proceso se tiene que poder repetir infinitas veces.
 

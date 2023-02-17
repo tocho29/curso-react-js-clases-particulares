@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 /**
  HOOKS DE REACT
@@ -38,17 +38,30 @@ const HookUseEffect = () => {
     El useEffect es una buena opción para las redenrizaciones condicionales.
   */
 
-    useEffect(() => {
+    const [hola, setHola] = useState(true)
+
+    // useEffect(() => {
       
-      // codigo que quieres que se ejecute
+    //   // codigo que quieres que se ejecute
 
-      // función de retorno para limpiar la memoria (opcional)
-      return () => {}
-    }, []) // aquí van las dependencias que hacen que se ejecute cuando se actualizan
+    //   // función de retorno para limpiar la memoria (opcional)
+    //   return () => {}
+    // }, []) // aquí van las dependencias que hacen que se ejecute cuando se actualizan
+
+    useEffect(() => {
+      setHola(false)
     
-
+      return () => { }
+    }, [])
+    
     return (
-    <>HookUseEffect</>
+      <>
+        {
+          hola === true
+          ? <h1>CARGANDO...</h1>
+          : <h2>hola mundo</h2>
+        }
+      </>
   )
 }
 

@@ -1,0 +1,6 @@
+ejercicio de useEffect
+----------------------
+Utilizando la url https://jsonplaceholder.typicode.com/ selecciona un endpoint y realiza una llamada ajax para obtener los datos.
+Una vez tengas los datos genera una tabla dinámica con react donde muestres esa información.
+
+Antes de mostrar la tabla, quiero que muestres un mensaje de "cargando" o cualquier otra cosa mientras se realiza la llamada fetch.

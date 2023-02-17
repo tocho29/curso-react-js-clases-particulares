@@ -1,0 +1,9 @@
+ejercicio de useMemo
+--------------------
+PARTE 1 DE 2
+Repite el ejercicio 02 pero ahora cuando realices la llamada fetch se almacene la información en memoria.
+
+Después de eso crea un botón que actualice algún estado de react y asegurate de que cuando haces click la información de la tabla se mantiene estática.
+
+PARTE 2 DE 2
+Además utiliza localStorage para almacenar la información y que cuando uses F5 no hagas el fetch obtengas los datos de localStorage

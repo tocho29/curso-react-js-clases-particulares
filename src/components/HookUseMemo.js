@@ -15,7 +15,7 @@ import { useState } from 'react'
  5.- algunos hooks solo pueden ser modificados por las funciones que el propio hook te proporciona ya que son constantes
 */
 
-const HookUseMemo = () => {
+export const HookUseMemo = () => {
   /*
     El useMemo es un hook muy sencillo que nos permite almacenar información en memoria (ram) y que esa información
     se mantenta estática aunque el componente se renderice.
@@ -29,21 +29,21 @@ const HookUseMemo = () => {
 
   const [contador, setContador] = useState(0)
 
-  let super_numero = 0
+  // let super_numero = 0
 
-  for (let index = 0; index < 1000000000; index++) {
-    super_numero++
-  }
+  // for (let index = 0; index < 1000000000; index++) {
+  //   super_numero++
+  // }
 
-  // const super_numero = useMemo(() => {
-  //   let numero = 0
+  const super_numero = useMemo(() => {
+    let numero = 0
 
-  //   for (let index = 0; index < 1000000000; index++) {
-  //     numero++
-  //   }
+    for (let index = 0; index < 1000000000; index++) {
+      numero++
+    }
 
-  //   return numero
-  // }, []) // como useEffect tiene un array de dependencias que si actualiza se ejecuta el memo
+    return numero
+  }, []) // como useEffect tiene un array de dependencias que si actualiza se ejecuta el memo
 
   const incrementarContador = () => {
     setContador(contador + 1)
