@@ -3,19 +3,23 @@ import HookUseState       from './HookUseState'
 import HookUseEffect      from './HookUseEffect/HookUseEffect'
 import UseEffectLimpieza  from './HookUseEffect/UseEffectLimpieza'
 import HookUseMemo        from './HookUseMemo'
-
-// import { function1, function2, function3, function4, hola } from './../helpers/functions'
+import Props              from './Props/Props'
 
 const Temas = () => {
 
-  // console.log(hola)
-  
   return (
     <>
       {/* <HookUseState /> */}
-      <HookUseEffect />
+      {/* <HookUseEffect /> */}
       {/* <UseEffectLimpieza /> */}
       {/* <HookUseMemo /> */}
+      
+      {/* <Props 
+        parametro1 = "hola jesus molas mazo"
+        parametro2 = {true}
+        parametro3 = {{nombre: "antonio"}}
+        parametro4 = {29}
+      /> */}
     </>
   )
 }
